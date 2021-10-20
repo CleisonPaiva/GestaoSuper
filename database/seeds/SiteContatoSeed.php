@@ -12,12 +12,13 @@ class SiteContatoSeed extends Seeder
      */
     public function run()
     {
-        SiteContato::create([
-            'nome'=>'Site teste',
-            'telefone'=>'99999999',
-            'email'=>'site@teste.com',
-            'motivo_contato'=>2,
-            'mensagem'=>'Mensagem'
-        ]);
+        SiteContato::factory(10)->create();
+//        SiteContato::create([
+//            'nome'=>'Site teste',
+//            'telefone'=>'99999999',
+//            'email'=>'site@teste.com',
+//            'motivo_contato'=>2,
+//            'mensagem'=>'Mensagem'
+//        ]);
     }
 }
